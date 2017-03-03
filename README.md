@@ -68,7 +68,7 @@ Then you enter say:  S 1 0 1
 And then nothing happens!!  And you will be very tempted to say "What the hell is this I thought it worked?!!!".
 **What's happening is that the program is waiting for your next input.  IT WILL ONLY PRINT STUFF OUT IF YOU PASS IT A 'P' COMMAND.**  I kid you not I was debugging a perfectly working program because I thought that had broken when I first noticed this behavior, I lost like 3hrs of my life, it was sad, don't let it hapen to you! :)
 
-##Final Thoughts
+#Final Thoughts
 I'm fairly certain I've covered everything if I missed something:
 * A:  Look at the comments in the code it might be there
 * B:  Feel free to PM me or email or whatever and I will be happy to answer questions
