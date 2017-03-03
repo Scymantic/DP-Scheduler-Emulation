@@ -10,7 +10,7 @@
 # 
 ###############################
 
-CC=g++ -std=c++0x
+CC=g++
 CFLAGS=-ggdb -Wall
 PFUNCS=ProcessFunctions.h ProcessFunctions.cpp
 
@@ -22,7 +22,7 @@ Commander: Commander.cpp
 	${CC} ${CFLAGS} Commander.cpp -o commander
 
 ProcessManager: ProcessManager.cpp ${ProcessManager}
-	${CC} ${CFLAGS} ProcessManager.cpp ${ProcessManager} -o procMan
+	${CC} ProcessManager.cpp ${ProcessManager} -o procMan
 
 clean: 
 	/bin/rm -f *.o commander processManager

@@ -28,6 +28,8 @@
 #define RESOURCE_2 1
 #define RESOURCE_3 2
 
+#define PRIORITY_LEVELS 4
+
 
 
 
@@ -1024,11 +1026,11 @@ void initialize(Time *time_, RunningState *rustate, ReadyState *restate, Blocked
 	time_->_time = 0;
 	rustate->_hasrunning = false;
 
-	restate->_queue = new QueueArray<int>(4);
+	restate->_queue = new QueueArray<int>(PRIORITY_LEVELS);
 
-	bstate->_resource1 = new QueueArray<int>(4);
-	bstate->_resource2 = new QueueArray<int>(4);
-	bstate->_resource3 = new QueueArray<int>(4);
+	bstate->_resource1 = new QueueArray<int>(PRIORITY_LEVELS);
+	bstate->_resource2 = new QueueArray<int>(PRIORITY_LEVELS);
+	bstate->_resource3 = new QueueArray<int>(PRIORITY_LEVELS);
 
 }
 
