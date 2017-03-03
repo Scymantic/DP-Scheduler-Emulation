@@ -34,6 +34,12 @@
 
 int main(int argc, char** argv)
 {
+
+	if(argc > 1)
+	{
+		fprintf(stderr, "Error: Main does not take arguments!\n");
+		return 1;
+	}
 	//Comander Prcess PIpe
 	int cmdp[2];
 
