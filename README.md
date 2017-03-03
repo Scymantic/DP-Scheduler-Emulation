@@ -56,7 +56,7 @@ The 'P' function takes zero (0) arguments.  All it does is print the current sta
 
 #Problems/Concerns?
 
-There should not be any problems.  Although in order to use functions like atoi() which is used in the processManager you MUST compile with a c++ 11 standard.  The makefile has this already so it should hopefuly work if not you'll simply have to do it by hand.
+There should not be any problems.  Although in order to use functions like atoi() which is used in the processManager you MUST compile with a c++ 11 standard.  The makefile DOES NOT have this because for some reason Mac hates that flag (or its a problem with my code haven't really gone down that rabbit hole yet)  the weird part is that any other Linux system A: Needs it B: is fine with it.  So the current make file is for a Mac user change it as you need so that you other Linux users can compile the code.  Alternatively just compile both the commander.cpp and processManager.cpp by hand.
 
 ##**VERY IMPORTANT**
 If you decide to do single operations (i.e. not using the txt files):
