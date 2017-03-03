@@ -1,0 +1,355 @@
+S 1 0 6
+P
+Q
+P
+Q
+P
+C A 5
+P
+C S 2
+P
+Q
+P
+S 2 10 10
+P
+Q
+P
+S 3 7 5
+P
+S 4 1 3
+P
+Q
+P
+Q
+P
+Q
+P
+C M 4
+P
+C A 2
+P
+S 5 6 3
+P
+S 6 6 8
+P
+B 2
+P
+B 1
+P
+S 7 0 1
+P
+S 8 9 9
+P
+S 9 8 20
+P
+S 10 20 8
+P
+Q
+P
+Q
+P
+Q
+P
+Q
+P
+Q
+P
+Q
+P
+Q
+P
+B 0
+P
+Q
+P
+Q
+P
+Q
+P
+Q
+P
+B 2
+P
+C D 10
+P
+C A 4
+P
+Q
+P
+Q
+P
+Q
+P
+B 0
+P
+Q
+P
+Q
+P
+S 11 6 2
+P
+S 12 9 3
+P
+U 1
+P
+Q
+P
+Q
+P
+S 13 18 8
+P
+S 14 27 4
+P
+U 0
+P
+U 2
+P
+Q
+P
+Q
+P
+Q
+P
+C A 10
+P
+B 1
+P
+C S 30
+P
+C D 2
+P
+S 15 10 1
+P
+C M 0
+P
+S 16 15 2
+P
+Q
+P
+Q
+P
+U 1
+P
+Q
+P
+Q
+P
+Q
+P
+Q
+P
+B 2
+P
+C A 3
+P
+C S 2
+P
+C M 4
+P
+U 2
+P
+Q
+P
+Q
+P
+Q
+P
+Q
+P
+S 17 10 25
+P
+Q
+P
+Q
+P
+Q
+P
+Q
+P
+B 1
+P
+Q
+P
+Q
+P
+C A 2
+P
+C M 10
+P
+C S 11
+P
+Q
+P
+Q
+P
+Q
+P
+Q
+P
+Q
+P
+B 1
+P
+Q
+P
+Q
+P
+Q
+P
+Q
+P
+Q
+P
+Q
+P
+Q
+P
+Q
+P
+S 18 10 5
+P
+Q
+P
+Q
+P
+Q
+P
+Q
+P
+S 19 1 6
+P
+S 20 5 8
+P
+S 21 8 1
+P
+C A 2
+P
+Q
+P
+Q
+P
+Q
+P
+Q
+P
+B 0
+P
+S 22 15 10
+P
+Q
+P
+B 0
+P
+S 23 125 5
+P
+U 1
+P
+Q
+P
+S 24 125 5
+P
+Q
+P
+Q
+P
+Q
+P
+Q
+P
+S 25 125 5
+P
+C A 60
+P
+C S 55
+P
+S 26 125 5
+P
+Q
+P
+C M 5
+P
+C D 8
+P
+S 27 125 5
+P
+Q
+P
+Q
+P
+C A 10
+P
+S 28 125 5
+P
+C A 10
+P
+Q
+P
+Q
+P
+Q
+P
+Q
+P
+C S 20
+P
+Q
+P
+B 2
+P
+Q
+P
+Q
+P
+C M 10
+P
+S 29 125 5
+P
+Q
+P
+Q
+P
+C A 10
+P
+Q
+P
+S 30 125 5
+P
+C M 9
+P
+C D 10
+P
+Q
+P
+Q
+P
+Q
+P
+S 31 125 5
+P
+Q
+P
+C D 2
+P
+C M 2
+P
+S 32 125 5
+P
+Q
+P
+Q
+P
+Q
+P
+S 33 125 5
+P
+Q
+P
+Q
+P
+C D 2
+P
+U 2
+P
+Q
+P
+T
