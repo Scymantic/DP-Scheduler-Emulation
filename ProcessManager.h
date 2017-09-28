@@ -60,15 +60,15 @@ struct PCB
 	}
 
 
-	int _pid;			//Process ID
-	int _priority;		//Process priority
-	int _value;			//Process value
-	int _start_time;	//Process start time
-	int _run_time;		//Process runtime
-	int _cpu_time; 		//increment when a time cycle is done
-	int _turnaround;	//Process turnaround time
-	int _qcounter;		//increment when a quantum is used up
-	int _quantum;		//Process quantum
+	int _pid;		//Process' ID
+	int _priority;		//Process' priority
+	int _value;		//Process' value
+	int _start_time;	//Process' start time
+	int _run_time;		//Process' runtime
+	int _cpu_time; 		//Increment when a time cycle is done
+	int _turnaround;	//Process' turnaround time
+	int _qcounter;		//Increment when a quantum is used up
+	int _quantum;		//Process' quantum
 };
 
 
@@ -85,7 +85,7 @@ struct PCBTable
 struct RunningState
 {
 	PCB _process;
-	bool _hasrunning;
+	bool _hasrunning; // True if the running state has a running process
 
 };
 
@@ -104,28 +104,28 @@ void start(int* cmdp, PCBTable *pcbt, RunningState *rustate, ReadyState *restate
 
 
 void calculate(int* cmdp, RunningState *rustate, PCBTable *pcbt, ReadyState *restate, Time *time);
-//  Reads 2 values from the commander.cpp pie; A char (the command to execute) and,
-//  	 an int (the number to use in the arithmetic operation)
+//  Reads 2 values from the commander.cpp pipe; A 'char' (the command to execute) and,
+//  	 an 'int' (the number to use in the arithmetic operation)
 //
 //  Performs an arithmetic operation using the value of the currently running process and the number read
 //  The operation performed corresponds to the character that was read in:
 //
 //	A:  Add
 //  	S:  Subtract
-// 	M: Multiply
-//  	D: Divide (if there is a divide by zero it will say so and not change the value)
+// 	M:  Multiply
+//  	D:  Divide (if there is a divide by zero error it will say so and not change the value)
 
 
 
 void unblock(BlockedState *bstate, ReadyState *restate, PCBTable *pcbt, RunningState *rustate, int rid);
-//  Moves a process from one of the BlockedState queue into the ReadyState queue based on the resource ID you are given
-//  If there is nothing currently running but that process onto the CPU instead of the Ready State queue 
+//  Moves a process from one of the BlockedState queues into the ReadyState queue based on the resource ID it is given
+//  If there is nothing currently running: put that process onto the CPU instead of the Ready State queue 
 
 
 
 void block(RunningState *rustate,  PCBTable *pcbt, BlockedState *bstate, ReadyState *restate, int rid);
 //  Moves a process from the CPU into one of the BlockedState resource queues based on a resource ID
-//  Then if there exist processes in the ready queue get one (with highest priority) and put it onto the CPU 
+//  Then if there exist processes in the ready queue: get one (with highest priority) and put it onto the CPU 
 
 
 
@@ -169,7 +169,7 @@ const void turnaround(PCBTable *pcbt);
 //  Calculate the average turnaround time for the system
 //  Print some other miscellanious information such as:
 //	a.  number of processes that have completed
-//  	b.  total time take for all completed processes
+//  	b.  total time taken for all completed processes
 //  	c.  total number of processes in the system
 //  	d.  total time taken by all processes in the system
 
