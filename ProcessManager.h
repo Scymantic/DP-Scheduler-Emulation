@@ -111,9 +111,9 @@ void calculate(int* cmdp, RunningState *rustate, PCBTable *pcbt, ReadyState *res
 //  The operation performed corresponds to the character that was read in:
 //
 //	A:  Add
-//  S:  Subtract
-//  M: Multiply
-//  D: Divide (if there is a divide by zero it will say so and not change the value)
+//  	S:  Subtract
+// 	M: Multiply
+//  	D: Divide (if there is a divide by zero it will say so and not change the value)
 
 
 
@@ -169,9 +169,9 @@ const void turnaround(PCBTable *pcbt);
 //  Calculate the average turnaround time for the system
 //  Print some other miscellanious information such as:
 //	a.  number of processes that have completed
-//  b.  total time take for all completed processes
-//  c.  total number of processes in the system
-//  d.  total time taken by all processes in the system
+//  	b.  total time take for all completed processes
+//  	c.  total number of processes in the system
+//  	d.  total time taken by all processes in the system
 
 
 void initialize(Time *time, RunningState *rustate, ReadyState *restate, BlockedState *bstate );
